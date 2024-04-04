@@ -17,8 +17,8 @@ M.setup = function(opts)
   end, {})
 
   vim.api.nvim_create_user_command('GoRunAllTests',
-    '<cmd>FloatermNew --height=0.7 --width=0.7 --autoclose=0 --title=gotestsum --name=gotestsum ' ..
-    M.config.commands.gotestsum .. '  --format testname<CR>',
+    'FloatermNew --height=0.7 --width=0.7 --autoclose=0 --title=gotestsum --name=gotestsum ' ..
+    M.config.commands.gotestsum .. '  --format testname',
     {})
 end
 
